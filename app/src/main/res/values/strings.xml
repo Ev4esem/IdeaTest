@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">IdeaTest</string>
+    <string name="title_amount">Количество товара</string>
+    <string name="button_accept">Принять</string>
+    <string name="button_cancel">Отмена</string>
+    <string name="content_description_add">Увеличить</string>
+    <string name="content_description_remove">Уменьшить</string>
+    <string name="content_description_settings">Настройки</string>
+    <string name="title_delete">Удаление товара</string>
+    <string name="message_delete">Вы действительно хотите удалить выбранный товар?</string>
+    <string name="button_yes">Да</string>
+    <string name="button_no">Нет</string>
+    <string name="content_description_warning">Предупреждение</string>
+    <string name="search_placeholder">Поиск товаров</string>
+    <string name="subtitle_card_on_warehouse">На складе</string>
+    <string name="subtitle_card_date_add">Дата добавления</string>
+    <string name="top_app_bar_title">Список товаров</string>
+</resources>
