@@ -1,6 +1,7 @@
 package com.dagteam.ideatest.data.local
 
 import androidx.room.Dao
+import androidx.room.Insert
 import androidx.room.Query
 import com.dagteam.ideatest.data.PhoneEntity
 import kotlinx.coroutines.flow.Flow
@@ -19,5 +20,8 @@ interface MainDao {
 
     @Query("SELECT * FROM phone_entity WHERE name LIKE '%' || :query || '%'")
     fun search(query: String): Flow<List<PhoneEntity>>
+
+    @Insert
+    fun insertAll(phones: List<PhoneEntity>)
 
 }

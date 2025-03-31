@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Samsung Galaxy",
+    "time": 1711900000000,
+    "tags": ["Android", "Flagship"],
+    "amount": 10
+  },
+  {
+    "name": "iPhone 14",
+    "time": 1711800000000,
+    "tags": ["iOS", "Premium"],
+    "amount": 5
+  },
+  {
+    "name": "Xiaomi Redmi Note 12",
+    "time": 1711700000000,
+    "tags": ["Android", "Budget"],
+    "amount": 15
+  },
+  {
+    "name": "Google Pixel 8",
+    "time": 1711600000000,
+    "tags": ["Android", "Camera"],
+    "amount": 8
+  }
+]

@@ -1,19 +1,28 @@
 package com.dagteam.ideatest.di
 
+import android.content.Context
 import com.dagteam.ideatest.data.MainRepositoryImpl
+import com.dagteam.ideatest.data.local.MainDao
 import com.dagteam.ideatest.domain.MainRepository
-import dagger.Binds
 import dagger.Module
+import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 @Module(includes = [DatabaseModule::class])
 @InstallIn(SingletonComponent::class)
-interface MainModule {
+class MainModule {
 
-    @Binds
+    @Provides
     @Singleton
-    fun bindMainRepositoryImplToMainRepository(mainRepositoryImpl: MainRepositoryImpl): MainRepository
+    fun provideMainRepositoryImplToMainRepository(
+        @ApplicationContext context: Context,
+        mainDao: MainDao
+    ): MainRepository = MainRepositoryImpl(
+        mainDao,
+        context
+    )
 
 }
